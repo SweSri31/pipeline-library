@@ -9,7 +9,7 @@ def call(Closure steps) {
     // Add sauce credentials
     sauce('f0a6b8ad-ce30-4cba-bf9a-95afbc470a8a') {
         // Start sauce connect
-        sauceconnect(options: '', useGeneratedTunnelIdentifier: false, verboseLogging: false) {
+        sauceconnect() {
             steps()
         }
     }
